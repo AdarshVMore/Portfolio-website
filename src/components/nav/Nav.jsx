@@ -32,13 +32,6 @@ function Nav() {
         <BiBookAlt />
       </a>
       <a
-        href="#services"
-        onClick={() => setActive("#services")}
-        className={state === "#services" ? "active" : ""}
-      >
-        <RiServiceFill />
-      </a>
-      <a
         href="#portfolio"
         onClick={() => setActive("#portfolio")}
         className={state === "#portfolio" ? "active" : ""}

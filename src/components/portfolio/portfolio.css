@@ -1,0 +1,40 @@
+#portfolio {
+  padding-top: 5.5rem;
+}
+
+.portfolio_container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.portfolio_container img {
+  width: 15rem;
+  height: auto;
+  border-radius: 20px;
+  margin: 0 auto 1rem auto;
+}
+
+.portfolio_article {
+  width: 17rem;
+  height: auto;
+  background-color: var(--color-primary-varient);
+  border-radius: 20px;
+  padding: 1rem;
+  margin-bottom: 2rem;
+}
+
+.portfolio_article h5 {
+  margin-bottom: 1rem;
+}
+
+.portfolio_article a {
+  padding: 0.8rem 1rem;
+  font-size: 10px;
+  margin-right: 1rem;
+}
+
+.swiper-pagination-bullet {
+  margin-top: 30px;
+}

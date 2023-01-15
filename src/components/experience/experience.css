@@ -1,3 +1,7 @@
+#experience {
+  padding-top: 3rem;
+}
+
 .experience_container {
   display: flex;
   justify-content: space-evenly;

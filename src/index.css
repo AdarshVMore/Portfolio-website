@@ -13,7 +13,7 @@
   --color-bg: #1f1f38;
   --color-bg-varient: #2c2c6c;
   --color-primary: #4db5ff;
-  --color-primary-varient: rgbaa(77, 181, 255, 0.4);
+  --color-primary-varient: rgba(77, 181, 255, 0.2);
   --color-white: #fff;
   --color-light: rgba(255, 255, 255, 0.6);
 
@@ -58,9 +58,9 @@ h1 {
   font-size: 2.5rem;
 }
 
-section {
+/* section {
   height: 100vh;
-}
+} */
 section > h2,
 section > h5 {
   text-align: center;
