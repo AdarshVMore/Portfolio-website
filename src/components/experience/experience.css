@@ -1,0 +1,102 @@
+.experience_container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.experience_container h3 {
+  color: var(--color-primary);
+}
+.experience_icon {
+  color: var(--color-primary);
+}
+.experience_frontend {
+  background-color: transparent;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.5rem 3rem;
+  margin-bottom: 2rem;
+  margin-right: 1.5rem;
+  border: 2px solid var(--color-bg-varient);
+  transition: 0.3s ease-in-out;
+}
+.experience_frontend:hover {
+  transform: scale(1.01) translateY(-1rem);
+  border: 2px solid var(--color-bg-varient);
+  background-color: var(--color-bg-varient);
+}
+.experience_backend {
+  background-color: transparent;
+
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.5rem 3rem;
+  margin-bottom: 2rem;
+  margin-right: 1.5rem;
+  border: 2px solid var(--color-bg-varient);
+  transition: 0.3s ease-in-out;
+}
+.experience_backend:hover {
+  transform: scale(1.01) translateY(-1rem);
+  background-color: var(--color-bg-varient);
+
+  border: 2px solid var(--color-bg-varient);
+}
+.experience_design {
+  background-color: transparent;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.5rem 4.8rem;
+  margin-bottom: 2rem;
+  border: 2px solid var(--color-bg-varient);
+  transition: 0.3s ease-in-out;
+}
+.experience_design:hover {
+  transform: scale(1.01) translateY(-1rem);
+  background-color: var(--color-bg-varient);
+  border: 2px solid var(--color-bg-varient);
+}
+.experience_detail {
+  margin: 0.8rem 0;
+}
+.skill_name {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.experience_detail small {
+  margin-left: 25px;
+  color: var(--color-light);
+}
+
+/* =================  MEDIA QUIERIES  ================ */
+
+@media screen and (max-width: 1024px) {
+  .experience_backend {
+    margin-right: 0;
+  }
+  .experience_frontend {
+    margin-right: 0;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .experience_container {
+    margin-top: 3rem;
+  }
+  .experience_frontend {
+    margin-right: 0;
+  }
+  .experience_backend {
+    margin-right: 0;
+  }
+  .experience_design {
+    margin-right: 0;
+  }
+}
