@@ -1,0 +1,44 @@
+section {
+  padding: 3rem 1rem;
+}
+.about_container {
+  display: flex;
+  gap: 5rem;
+}
+.about_container img {
+  width: 20vw;
+  height: auto;
+}
+.about_container h5 {
+  font-size: 8px;
+  margin-bottom: 10px;
+  color: var(--color-light);
+}
+.about_container a {
+  margin-top: 2rem;
+}
+
+/* ===================  MEDIA QUERIES (MEDIUM DEVICES)  ================= */
+
+@media screen and (max-width: 1024px) {
+  .about_container {
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+  }
+  section {
+    padding: 1rem;
+  }
+  section h2 {
+    margin-bottom: 2rem;
+  }
+}
+
+/* ===================  MEDIA QUERIES (SMALL DEVICES)  ================= */
+
+@media screen and (max-width: 600px) {
+  .about_container img {
+    width: 40vw;
+    height: 40vw;
+  }
+}

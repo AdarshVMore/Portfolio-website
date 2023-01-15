@@ -1,0 +1,76 @@
+header {
+  height: 100vh;
+  padding: 7rem 0 0 0;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header_container {
+  text-align: center;
+  height: 100%;
+  position: relative;
+}
+
+/* ===============  CTA  =============== */
+.cta {
+  margin-top: 2.5rem;
+  display: flex;
+  gap: 1.2rem;
+  justify-content: center;
+}
+
+/*  ==============  SOCIALS  ================== */
+.header_socials {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.8rem;
+  position: absolute;
+  left: 5.99vw;
+  /* top: 70%; */
+  bottom: 3rem;
+  position: fixed;
+}
+
+.header_socials::after {
+  content: "";
+  width: 2px;
+  height: 2rem;
+  background: var(--color-primary);
+}
+
+/* ===================  SCROLL DOWN  ================= */
+.scroll {
+  position: fixed;
+  transform: rotate(90deg);
+  bottom: 7rem;
+  right: 3vw;
+  color: var(--color-primary);
+  display: flex;
+  align-items: center;
+}
+
+.scroll_down {
+  margin-right: 20px;
+}
+
+/* ===================  MEDIA QUERIES (MEDIUM DEVICES)  ================= */
+
+@media screen and (max-width: 1024px) {
+  header {
+    height: 68vh;
+  }
+}
+/* ===================  MEDIA QUERIES (SMALL DEVICES)  ================= */
+
+@media screen and (max-width: 1024px) {
+  header {
+    height: 100vh;
+  }
+  .header_socials,
+  .scroll {
+    display: none;
+  }
+}

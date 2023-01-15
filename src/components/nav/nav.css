@@ -1,0 +1,41 @@
+nav {
+  background: rgba(0, 0, 0, 0.1);
+  width: max-content;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 5rem;
+  left: 5vw;
+  border-radius: 100px;
+  padding: 5px 5px;
+  position: fixed;
+  backdrop-filter: blur(15px);
+  gap: 0.5rem;
+}
+
+nav a {
+  padding: 4px 10px;
+  border-radius: 100px;
+}
+
+nav a:hover {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+nav a.active {
+  background: var(--color-bg);
+  transition: 1s ease-in-out;
+}
+
+/* ====================  MEDIA QUERIES  =================== */
+
+@media screen and (max-width: 1024px) {
+  nav {
+    position: fixed;
+    top: 85vh;
+    align-items: center;
+    flex-direction: row;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
