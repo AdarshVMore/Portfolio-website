@@ -91,9 +91,10 @@
 }
 
 @media screen and (max-width: 600px) {
-  .experience_container {
-    margin-top: 3rem;
+  #experience {
+    margin-top: 7rem;
   }
+
   .experience_frontend {
     margin-right: 0;
   }

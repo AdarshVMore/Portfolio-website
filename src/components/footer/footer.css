@@ -1,0 +1,41 @@
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: var(--color-primary);
+  color: var(--color-bg);
+  padding: 3rem 0;
+}
+footer h2,
+footer a {
+  color: var(--color-bg);
+  margin: 0 0.5rem 1rem 0.5rem;
+}
+footer .nav_links {
+  margin-bottom: 3rem;
+}
+footer .socials_icons {
+  display: flex;
+  flex-direction: row;
+}
+footer .socials_icons a {
+  margin-bottom: 1rem;
+  color: white;
+  background: var(--color-bg);
+  padding: 0.5rem;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 5rem;
+  align-items: center;
+}
+
+/* =======================  MEDIA QUERIES  ====================== */
+
+@media screen and (max-width: 767px) {
+  .nav_links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
