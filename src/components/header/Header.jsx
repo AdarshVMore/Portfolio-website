@@ -3,6 +3,7 @@ import CTA from "./CTA";
 import "./header.css";
 import HeaderSocials from "./HeaderSocials";
 import { HiOutlineArrowNarrowRight } from "react-icons/hi";
+import Spline from "@splinetool/react-spline";
 
 function header() {
   return (
@@ -16,6 +17,7 @@ function header() {
           </h5>
           <CTA />
         </div>
+
         <HeaderSocials />
         <div className="scroll">
           <a href="#contact" className="scroll_down">

@@ -4,11 +4,23 @@
 }
 .about_container {
   display: flex;
-  gap: 5rem;
+  justify-content: space-between;
+  align-items: center;
+}
+.about_me_text {
+  width: 60%;
+}
+.about_me_text span {
+  color: var(--color-primary);
+}
+
+.test1 {
+  margin-top: 30px;
 }
 .about_container img {
-  width: 20vw;
-  height: auto;
+  width: 25vw;
+  height: 27vw;
+  border-radius: 0 30px 0 0;
 }
 .about_container h5 {
   font-size: 8px;

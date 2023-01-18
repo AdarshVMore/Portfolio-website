@@ -1,6 +1,6 @@
 import React from "react";
 import "./about.css";
-import ME from "../../assets/assets/me-about.jpg";
+import ME from "../../assets/assets/zport1.jpg";
 
 function About() {
   return (
@@ -11,21 +11,43 @@ function About() {
         <img src={ME} alt="" />
         <div className="about_me_text">
           <h5>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni nemo
-            id veritatis sint inventore iste laudantium ullam eaque a deleniti.
-          </h5>
-          <h5>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione,
-            voluptates nobis adipisci corrupti eligendi placeat.
-          </h5>
-          <h5>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia quae
-            consequuntur nam dolore porro? Atque minima distinctio nostrum,
-            tempora nemo dolorum amet blanditiis itaque sed error at voluptates
-            commodi?
+            After exploring bunch of different Designing Domains
+            <span> I Started my programming journey in 2021</span>
           </h5>
 
-          <h5>Lorem ipsum dolor sit amet consectetur.</h5>
+          <h5>
+            Actually <span>I am a second Year Computer Science student</span> at
+            Mumbai University GIT college
+          </h5>
+          <h5>
+            But
+            <span>
+              {" "}
+              I am Self taught with 2 years of programming experience{" "}
+            </span>
+            and ready to build the Next Unicorn
+          </h5>
+
+          <h5>Learnt everything from YouTube and Google</h5>
+
+          <h5>
+            Built Bunch of different Orignal Projects using my Web development
+            skills and yet now <span>Building some awesome WEB 3 projects</span>
+          </h5>
+
+          <h5>
+            Always updated with new designing and coding tech and tool in the
+            market
+          </h5>
+
+          <h5>
+            I am <span>in LOVE with Building stuff</span> from scratch Man!!
+            Trust me
+          </h5>
+
+          <h3 className="test1">
+            <span>LET'S TURN YOUR IDEA INTO A PRODUCT</span>
+          </h3>
 
           <a href="#contact" className="btn btn-primary">
             Lets Talk

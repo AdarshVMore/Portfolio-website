@@ -19,25 +19,24 @@ function Testimonial() {
   const reviews = [
     {
       img: AVTR1,
-      name: "Adarsh More",
-      review:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum non magni exercitationem iusto quo recusandae atque ullam! Molestias rem eveniet ratione quia porro unde possimus.",
+      name: "Unknown",
+      review: "Be the First one to review my work ",
     },
     {
       img: AVTR2,
-      name: "Adarsh More",
+      name: "Unknown",
       review:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum non magni exercitationem iusto quo recusandae atque ullam! Molestias rem eveniet ratione quia porro unde possimus.",
     },
     {
       img: AVTR3,
-      name: "Adarsh More",
+      name: "Unknown",
       review:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum non magni exercitationem iusto quo recusandae atque ullam! Molestias rem eveniet ratione quia porro unde possimus.",
     },
     {
       img: AVTR4,
-      name: "Adarsh More",
+      name: "Unknown",
       review:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum non magni exercitationem iusto quo recusandae atque ullam! Molestias rem eveniet ratione quia porro unde possimus.",
     },

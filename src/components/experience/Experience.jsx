@@ -17,7 +17,7 @@ function Experience() {
                 <BsPatchCheckFill className="experience_icon" />
                 <h4>React</h4>
               </div>
-              <small>Experienced</small>
+              <small>Intermidiate</small>
             </article>
             <article className="experience_detail">
               <div className="skill_name">
@@ -31,7 +31,7 @@ function Experience() {
                 <BsPatchCheckFill className="experience_icon" />
                 <h4>Tailwind CSS</h4>
               </div>
-              <small>Experienced</small>
+              <small>Intermidiate</small>
             </article>
             <article className="experience_detail">
               <div className="skill_name">
@@ -64,7 +64,7 @@ function Experience() {
                 <BsPatchCheckFill className="experience_icon" />
                 <h4>Hardhat</h4>
               </div>
-              <small>Experienced</small>
+              <small>Intermidiate</small>
             </article>
             <article className="experience_detail">
               <div className="skill_name">
@@ -78,7 +78,7 @@ function Experience() {
                 <BsPatchCheckFill className="experience_icon" />
                 <h4>Django</h4>
               </div>
-              <small>Experienced</small>
+              <small>Intermidiate</small>
             </article>
             <article className="experience_detail">
               <div className="skill_name">
@@ -116,9 +116,9 @@ function Experience() {
             <article className="experience_detail">
               <div className="skill_name">
                 <BsPatchCheckFill className="experience_icon" />
-                <h4>Adobe SD</h4>
+                <h4>Adobe XD</h4>
               </div>
-              <small>Experienced</small>
+              <small>Intermidiate</small>
             </article>
             <article className="experience_detail">
               <div className="skill_name">
