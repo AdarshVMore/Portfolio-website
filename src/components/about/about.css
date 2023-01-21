@@ -1,6 +1,5 @@
 #about {
   padding: 3rem 1rem;
-  height: 100vh;
 }
 .about_container {
   display: flex;
@@ -17,10 +16,13 @@
 .test1 {
   margin-top: 30px;
 }
-.about_container img {
+.my_image {
   width: 25vw;
   height: 27vw;
   border-radius: 0 30px 0 0;
+  /* transform: translateY(50px);
+  opacity: 0.5;
+  transition: all 1s ease-in-out; */
 }
 .about_container h5 {
   font-size: 8px;
@@ -54,4 +56,14 @@
     width: 40vw;
     height: 40vw;
   }
+  .about_me_text {
+    width: 80%;
+  }
 }
+
+/* ===================  SCROLL ANIMATION  ====================== */
+
+/* .show {
+  transform: translateY(10px);
+  opacity: 1;
+} */

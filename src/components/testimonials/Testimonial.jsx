@@ -22,24 +22,24 @@ function Testimonial() {
       name: "Unknown",
       review: "Be the First one to review my work ",
     },
-    {
-      img: AVTR2,
-      name: "Unknown",
-      review:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum non magni exercitationem iusto quo recusandae atque ullam! Molestias rem eveniet ratione quia porro unde possimus.",
-    },
-    {
-      img: AVTR3,
-      name: "Unknown",
-      review:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum non magni exercitationem iusto quo recusandae atque ullam! Molestias rem eveniet ratione quia porro unde possimus.",
-    },
-    {
-      img: AVTR4,
-      name: "Unknown",
-      review:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum non magni exercitationem iusto quo recusandae atque ullam! Molestias rem eveniet ratione quia porro unde possimus.",
-    },
+    // {
+    //   img: AVTR2,
+    //   name: "Unknown",
+    //   review:
+    //     "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum non magni exercitationem iusto quo recusandae atque ullam! Molestias rem eveniet ratione quia porro unde possimus.",
+    // },
+    // {
+    //   img: AVTR3,
+    //   name: "Unknown",
+    //   review:
+    //     "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum non magni exercitationem iusto quo recusandae atque ullam! Molestias rem eveniet ratione quia porro unde possimus.",
+    // },
+    // {
+    //   img: AVTR4,
+    //   name: "Unknown",
+    //   review:
+    //     "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum non magni exercitationem iusto quo recusandae atque ullam! Molestias rem eveniet ratione quia porro unde possimus.",
+    // },
   ];
   return (
     <div className="testimonials">

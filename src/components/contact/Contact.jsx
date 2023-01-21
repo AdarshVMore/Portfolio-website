@@ -10,21 +10,22 @@ function Contact() {
   const sendEmail = (e) => {
     e.preventDefault();
     e.target.reset();
-    emailjs
-      .sendForm(
-        "service_xsv7shd",
-        "template_3xsprxd",
-        form.current,
-        "6fo4x42aWSS_lT_RE"
-      )
-      .then(
-        () => {
-          alert("email sent Succesfully ✅");
-        },
-        (error) => {
-          alert(error.text);
-        }
-      );
+    // emailjs
+    //   .sendForm(
+    //     "service_xsv7shd",
+    //     "template_3xsprxd",
+    //     form.current,
+    //     "6fo4x42aWSS_lT_RE"
+    //   )
+    //   .then(
+    //     () => {
+    //       alert("email sent Succesfully ✅");
+    //     },
+    //     (error) => {
+    //       alert(error.text);
+    //     }
+    //   );
+    alert("❌ ERROR 404 : Message not sent, please use Email ❗");
   };
   return (
     <section id="contact">

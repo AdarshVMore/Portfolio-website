@@ -3,6 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@react-email/render": "^0.0.6",
+    "@sendgrid/mail": "^7.7.0",
     "@splinetool/react-spline": "^2.2.5",
     "@splinetool/runtime": "^0.9.186",
     "@testing-library/jest-dom": "^5.16.5",

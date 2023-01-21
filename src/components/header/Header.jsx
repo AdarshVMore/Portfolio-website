@@ -3,9 +3,8 @@ import CTA from "./CTA";
 import "./header.css";
 import HeaderSocials from "./HeaderSocials";
 import { HiOutlineArrowNarrowRight } from "react-icons/hi";
-import Spline from "@splinetool/react-spline";
 
-function header() {
+function Header() {
   return (
     <header>
       <div className="container header_container">
@@ -30,4 +29,4 @@ function header() {
   );
 }
 
-export default header;
+export default Header;

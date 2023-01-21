@@ -1,6 +1,8 @@
 import React from "react";
 import "./portfolio.css";
-import P1 from "../../assets/assets/portfolio1.jpg";
+import P1 from "../../assets/assets/portfolio1.png";
+import P2 from "../../assets/assets/portfolio2.png";
+import P3 from "../../assets/assets/portfolio3.png";
 
 function Portfolio() {
   return (
@@ -21,14 +23,18 @@ function Portfolio() {
             >
               Github
             </a>
-            <a href="" className=" btn btn-primary" target="_blank">
+            <a
+              href="https://adarshmore.netlify.app/"
+              className=" btn btn-primary"
+              target="_blank"
+            >
               Live Demo
             </a>
           </div>
         </article>
         <article className="portfolio_article">
           <div className="portfolio_img">
-            <img src={P1} alt="" />
+            <img src={P3} alt="" />
           </div>
           <h5>Students Community Platform</h5>
           <div>
@@ -46,7 +52,7 @@ function Portfolio() {
         </article>
         <article className="portfolio_article">
           <div className="portfolio_img">
-            <img src={P1} alt="" />
+            <img src={P2} alt="" />
           </div>
           <h5>Data Site</h5>
           <div>

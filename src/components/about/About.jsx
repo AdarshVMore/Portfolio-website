@@ -3,12 +3,23 @@ import "./about.css";
 import ME from "../../assets/assets/zport1.jpg";
 
 function About() {
+  const Observer = new IntersectionObserver((entries) => {
+    if (entries[0].isIntersecting) {
+      entries.target.classList.add("show");
+    } else {
+      entries.target.classList.remove("show");
+    }
+  });
+
+  const photo = document.getElementsByClassName("my_image");
+  // photo.forEach((el) => observer.observe(el));
+  // Observer.observe(photo);
   return (
     <section id="about">
       <h5>Want to know</h5>
       <h2>About Me</h2>
       <div className="container about_container">
-        <img src={ME} alt="" />
+        <img src={ME} alt="" className="my_image" />
         <div className="about_me_text">
           <h5>
             After exploring bunch of different Designing Domains
@@ -17,7 +28,7 @@ function About() {
 
           <h5>
             Actually <span>I am a second Year Computer Science student</span> at
-            Mumbai University GIT college
+            Mumbai University
           </h5>
           <h5>
             But
