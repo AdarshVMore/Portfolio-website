@@ -14,6 +14,12 @@
 .experience_icon {
   color: var(--color-primary);
 }
+.exp_header {
+  opacity: 0;
+}
+.exp {
+  opacity: 0;
+}
 .experience_frontend {
   background-color: transparent;
   border-radius: 20px;

@@ -13,12 +13,91 @@ header {
   position: relative;
 }
 
+.hello {
+  animation: animateHello 1s ease-in-out;
+}
+.name {
+  animation: animateName 1s ease-in-out;
+}
+.under_name {
+  animation: animateUnder_name 1s ease-in-out;
+}
+
+@keyframes animateHello {
+  from {
+    transform: translateY(-30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes animateName {
+  0% {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  40% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes animateUnder_name {
+  0% {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  70% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
 /* ===============  CTA  =============== */
 .cta {
   margin-top: 2.5rem;
   display: flex;
   gap: 1.2rem;
   justify-content: center;
+  opacity: 1;
+}
+.btn1 {
+  animation: animateBtn1 1.5s ease-in-out;
+}
+.btn2 {
+  animation: animateBtn2 1.5s ease-in-out;
+}
+
+@keyframes animateBtn1 {
+  from {
+    transform: translateX(-50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes animateBtn2 {
+  from {
+    transform: translateX(50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }
 
 /*  ==============  SOCIALS  ================== */
@@ -32,6 +111,19 @@ header {
   /* top: 70%; */
   bottom: 3rem;
   position: fixed;
+  animation: animateSocials 2.5s ease-in-out;
+}
+
+@keyframes animateSocials {
+  0% {
+    opacity: 0;
+  }
+  60% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .header_socials::after {
@@ -50,8 +142,20 @@ header {
   color: var(--color-primary);
   display: flex;
   align-items: center;
+  animation: animateScroll 2.5s ease-in-out;
 }
 
+@keyframes animateScroll {
+  0% {
+    opacity: 0;
+  }
+  60% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .scroll_down {
   margin-right: 20px;
 }

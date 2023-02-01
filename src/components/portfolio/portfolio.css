@@ -12,17 +12,25 @@
 .portfolio_container img {
   width: 15rem;
   height: auto;
-  border-radius: 20px;
+  border-radius: 10px;
   margin: 0 auto 1rem auto;
 }
-
+.portHeader {
+  opacity: 0;
+}
 .portfolio_article {
   width: 17rem;
   height: auto;
-  background-color: var(--color-primary-varient);
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    180deg,
+    rgba(31, 31, 56, 1) 30%,
+    rgba(77, 181, 255, 0.2) 100%
+  );
   border-radius: 20px;
   padding: 1rem;
   margin-bottom: 2rem;
+  opacity: 0;
 }
 
 .portfolio_article h5 {

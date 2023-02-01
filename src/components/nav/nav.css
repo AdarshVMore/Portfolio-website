@@ -12,8 +12,19 @@ nav {
   backdrop-filter: blur(15px);
   gap: 0.5rem;
   z-index: 2;
+  animation: animateNav 2.5s ease-in-out;
 }
-
+@keyframes animateNav {
+  0% {
+    opacity: 0;
+  }
+  60% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 nav a {
   padding: 4px 10px;
   border-radius: 100px;

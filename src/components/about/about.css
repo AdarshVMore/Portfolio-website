@@ -1,6 +1,6 @@
 #about {
   padding: 3rem 1rem;
-  height: 100vh;
+  /* height: 100vh; */
 }
 .about_container {
   display: flex;
@@ -16,16 +16,22 @@
 
 .test1 {
   margin-top: 30px;
+  opacity: 0;
 }
 .about_container img {
   width: 25vw;
   height: 27vw;
   border-radius: 0 30px 0 0;
+  opacity: 0;
 }
 .about_container h5 {
   font-size: 8px;
   margin-bottom: 10px;
   color: var(--color-light);
+}
+
+.about_me_text h5 {
+  opacity: 0;
 }
 .about_container a {
   margin-top: 2rem;
