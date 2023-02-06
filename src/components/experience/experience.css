@@ -33,7 +33,7 @@
   transition: 0.3s ease-in-out;
 }
 .experience_frontend:hover {
-  transform: scale(1.01) translateY(-1rem);
+  transform: scale(1.5);
   border: 2px solid var(--color-bg-varient);
   background-color: var(--color-bg-varient);
 }
@@ -83,6 +83,20 @@
 .experience_detail small {
   margin-left: 25px;
   color: var(--color-light);
+}
+
+.icon_imgs {
+  width: 50px;
+  /* height: 30px; */
+  opacity: 50%;
+}
+.floating_icons {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  width: 100vh;
+  margin: auto;
+  justify-content: center;
 }
 
 /* =================  MEDIA QUIERIES  ================ */

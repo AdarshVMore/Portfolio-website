@@ -28,6 +28,7 @@
 
 .contact_option_one {
   opacity: 0;
+  border: 1px solid rgba(77, 181, 255, 0.1);
 }
 .contact_option_two {
   opacity: 0;

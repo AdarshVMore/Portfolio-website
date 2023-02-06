@@ -32,7 +32,7 @@ function Contact() {
         scrollTrigger: {
           trigger: contactHeader,
           start: "top 70%",
-          end: "bottom 20%",
+          end: "bottom 10%",
           toggleActions: "restart reverse restart reverse",
           // markers: true,
         },
@@ -88,13 +88,15 @@ function Contact() {
     emailjs
       .sendForm(
         "service_xsv7shd",
-        "template_3xsprxd",
+        "template_1spu4ru",
         form.current,
         "6fo4x42aWSS_lT_RE"
       )
       .then(
         () => {
-          alert("email sent Succesfully ✅");
+          alert(
+            "❌ Error: Direct Message is not working , send an Email or whatsapp me"
+          );
         },
         (error) => {
           alert(error.text);
@@ -137,6 +139,7 @@ function Contact() {
           <input type="text" name="email" placeholder="Your Email Id" />
           <textarea
             name="message"
+            id="message"
             rows="10"
             placeholder="Your Message"
           ></textarea>

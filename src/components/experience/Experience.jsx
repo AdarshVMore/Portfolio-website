@@ -4,10 +4,32 @@ import { BsPatchCheckFill } from "react-icons/bs";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useRef, useEffect } from "react";
+import icon1 from "../../assets/icons/js.png";
+import icon2 from "../../assets/icons/tailwind.png";
+import icon3 from "../../assets/icons/react.png";
+import icon4 from "../../assets/icons/figma.png";
+import icon5 from "../../assets/icons/github.png";
+import icon6 from "../../assets/icons/python.png";
+import icon7 from "../../assets/icons/xd.png";
+import icon8 from "../../assets/icons/django.png";
+import icon9 from "../../assets/icons/remix.png";
+import icon10 from "../../assets/icons/solidity.png";
+
 gsap.registerPlugin(ScrollTrigger);
 
 function Experience() {
   const expRef = useRef(null);
+  let iconArray = [
+    icon1,
+    icon2,
+    icon3,
+    icon4,
+    icon5,
+    icon6,
+    icon7,
+    icon8,
+    icon10,
+  ];
 
   useEffect(() => {
     const ex = expRef.current;
@@ -182,6 +204,13 @@ function Experience() {
           </div>
         </div>
       </div>
+      {/* <div className="floating_icons">
+        {iconArray.map((icon) => (
+          <marquee width="200px" behavior="scroll" direction="left">
+            <img className="icon_imgs" src={icon} alt="" title={icon} />
+          </marquee>
+        ))}
+      </div> */}
     </section>
   );
 }

@@ -8,22 +8,55 @@ import Portfolio from "./components/portfolio/Portfolio";
 import Testimonial from "./components/testimonials/Testimonial";
 import Contact from "./components/contact/Contact";
 import About from "./components/about/About";
-// import Services from "./components/services/Services";
+import ParticleBackground from "./components/particles/ParticleBackground";
+import MouseTrials from "./components/mousetrial/MouseTrials";
+
+import { useState, CSSProperties, useEffect } from "react";
+import "./index.css";
 
 function App() {
+  const [loading, setLoading] = useState(false);
+  useEffect(() => {
+    setLoading(true);
+    setTimeout(() => {
+      setLoading(false);
+    }, 4200);
+  }, []);
   let tl = new gsap.timeline();
   let ease = Power3.easeOut;
+
+  const override = {
+    display: "block",
+    margin: "0 auto",
+    borderColor: "red",
+  };
   return (
     <div className="App">
-      <Header timeline={tl} ease={ease} />
-      <Nav />
-      <About />
-      <Experience />
-      {/* <Services /> */}
-      <Portfolio />
-      <Testimonial />
-      <Contact />
-      <Footer />
+      {/* {loading ? (
+        <div className="loader">
+          <PropagateLoader
+            className="loader"
+            color="#00fdff"
+            cssOverride={{ override }}
+            size={18}
+            speedMultiplier={1}
+          />
+        </div>
+      ) : ( */}
+      <>
+        {/* {window.innerWidth >= 1024 ? <MouseTrials /> : ""} */}
+
+        <ParticleBackground id="tsparticle" />
+        <Header timeline={tl} ease={ease} />
+        <Nav />
+        <About />
+        <Experience />
+        <Portfolio />
+        <Testimonial />
+        <Contact />
+        <Footer />
+      </>
+      {/* )} */}
     </div>
   );
 }

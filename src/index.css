@@ -9,11 +9,16 @@
   text-decoration: none;
 }
 
+canvas {
+  width: 0;
+  height: 0;
+}
+
 :root {
-  --color-bg: #1f1f38;
+  --color-bg: #161629;
   --color-bg-varient: #2c2c6c;
   --color-primary: #4db5ff;
-  --color-primary-varient: rgba(77, 181, 255, 0.2);
+  --color-primary-varient: rgba(77, 181, 255, 0.05);
   --color-white: #fff;
   --color-light: rgba(255, 255, 255, 0.6);
 
@@ -32,12 +37,28 @@ html {
   display: none;
 }
 
+.loader {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+}
+
 body {
   font-family: "Poppins", sans-serif;
-  background: var(--color-bg);
+  /* background: var(--color-bg); */
+  background: rgb(22, 22, 41);
+  background: linear-gradient(
+    38deg,
+    rgba(22, 22, 41, 1) 62%,
+    rgba(0, 55, 105, 1) 100%
+  );
+
   color: var(--color-white);
   line-height: 1.7;
-  background-image: url("./assets/assets/bg-texture.png");
+  /* background-image: url("./assets/assets/bg-texture.png"); */
 }
 
 /* ================  GENERAL STYLES  ===============*/

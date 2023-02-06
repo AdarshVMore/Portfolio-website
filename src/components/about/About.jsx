@@ -9,10 +9,12 @@ gsap.registerPlugin(ScrollTrigger);
 function About() {
   const imgRef = useRef(null);
   const textRef = useRef(null);
+  const headerRef = useRef(null);
 
   useEffect(() => {
     const el = imgRef.current;
     const text = textRef.current;
+    const header = headerRef.current;
 
     gsap.fromTo(
       ".about_header",
@@ -26,9 +28,9 @@ function About() {
         duration: 0.2,
         stagger: 0.1,
         scrollTrigger: {
-          trigger: el,
-          start: "top 90%",
-          end: "bottom 20%",
+          trigger: header,
+          start: "top 70%",
+          end: "bottom 10%",
           toggleActions: "restart reverse restart reverse",
           // markers: true,
         },
@@ -41,12 +43,12 @@ function About() {
         y: 30,
       },
       {
-        opacity: 1,
+        opacity: 0.7,
         y: 0,
         duration: 0.5,
         scrollTrigger: {
           trigger: el,
-          start: "top 85%",
+          start: "top 70%",
           end: "bottom 20%",
           toggleActions: "restart reverse restart reverse",
           // markers: true,
@@ -96,8 +98,12 @@ function About() {
 
   return (
     <section id="about">
-      <h5 className="about_header">Want to know</h5>
-      <h2 className="about_header">About Me</h2>
+      <h5 className="about_header" ref={headerRef}>
+        Want to know
+      </h5>
+      <h2 className="about_header" ref={headerRef}>
+        About Me
+      </h2>
       <div className="container about_container">
         <img src={ME} alt="" ref={imgRef} />
         <div className="about_me_text" ref={textRef}>

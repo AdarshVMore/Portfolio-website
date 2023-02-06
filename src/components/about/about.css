@@ -5,7 +5,7 @@
 .about_container {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  /* align-items: center; */
 }
 .about_me_text {
   width: 60%;
@@ -25,7 +25,7 @@
   opacity: 0;
 }
 .about_container h5 {
-  font-size: 8px;
+  font-size: 15px;
   margin-bottom: 10px;
   color: var(--color-light);
 }
@@ -45,11 +45,18 @@
     align-items: center;
     gap: 3rem;
   }
+  .about_container img {
+    width: 17rem;
+    height: 20rem;
+  }
   section {
     padding: 1rem;
   }
   section h2 {
     margin-bottom: 2rem;
+  }
+  .about_me_text {
+    width: 90%;
   }
 }
 
@@ -57,7 +64,10 @@
 
 @media screen and (max-width: 600px) {
   .about_container img {
-    width: 40vw;
-    height: 40vw;
+    width: 17rem;
+    height: 19rem;
+  }
+  .about_me_text {
+    width: 90%;
   }
 }

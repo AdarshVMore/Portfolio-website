@@ -35,6 +35,9 @@ function Header({ timeline, ease }) {
   //     ease: ease,
   //   });
   // });
+
+  let scrollArrow = document.getElementsByClassName(".scroll_down");
+
   return (
     <header>
       <div className="container header_container">
