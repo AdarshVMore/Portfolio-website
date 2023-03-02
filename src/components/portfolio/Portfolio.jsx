@@ -1,14 +1,18 @@
 import React from "react";
 import "./portfolio.css";
-import P1 from "../../assets/assets/portfolio1.png";
-import P2 from "../../assets/assets/portfolio2.png";
-import P3 from "../../assets/assets/portfolio3.png";
+
+import Frontend from "./projects/Frontend";
+import Web2 from "./projects/Web2";
+import Web3 from "./projects/Web3";
+import UiUx from "./projects/UiUx";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/all";
-import { useRef, useEffect } from "react";
+import { useRef, useEffect, useState } from "react";
 gsap.registerPlugin(ScrollTrigger);
 
 function Portfolio() {
+  const [state, setState] = useState("#frontend");
+
   const portRef = useRef(null);
   const portArticleRef = useRef(null);
   useEffect(() => {
@@ -60,66 +64,43 @@ function Portfolio() {
   return (
     <section id="portfolio" ref={portRef}>
       <h5 className="portHeader">My Recent work</h5>
-      <h2 className="portHeader">Portfolio</h2>
+      <h2 className="portHeader portHeader_bottom">Portfolio</h2>
+      <div className="filter_btns">
+        <button
+          onClick={() => setState("#frontend")}
+          className={state === "#frontend" ? "btn btn-primary" : "btn"}
+        >
+          Front-end
+        </button>
+        <button
+          onClick={() => {
+            setState("#web2");
+          }}
+          className={state === "#web2" ? "btn btn-primary" : "btn"}
+        >
+          {" "}
+          Web 2.0
+        </button>
+        <button
+          onClick={() => setState("#web3")}
+          className={state === "#web3" ? "btn btn-primary" : "btn"}
+        >
+          {" "}
+          Web 3.0
+        </button>
+        <button
+          onClick={() => setState("#uiux")}
+          className={state === "#uiux" ? "btn btn-primary" : "btn"}
+        >
+          {" "}
+          UI/UX design
+        </button>
+      </div>
       <div className="container portfolio_container" ref={portArticleRef}>
-        <article className="portfolio_article">
-          <div className="portfolio_img">
-            <img src={P1} alt="" />
-          </div>
-          <h5>Portfolio Website</h5>
-          <div>
-            <a
-              href="https://github.com/AdarshVMore/Portfolio-website"
-              className="btn"
-              target="_blank"
-            >
-              Github
-            </a>
-            <a href="" className=" btn btn-primary" target="_blank">
-              Live Demo
-            </a>
-          </div>
-        </article>
-        <article className="portfolio_article">
-          <div className="portfolio_img">
-            <img src={P3} alt="" />
-          </div>
-          <h5>Students Community Platform</h5>
-          <div>
-            <a
-              href="https://github.com/AdarshVMore/Students-Community-Platform"
-              className="btn"
-              target="_blank"
-            >
-              Github
-            </a>
-            <a href="" className=" btn btn-primary">
-              Live Demo
-            </a>
-          </div>
-        </article>
-        <article className="portfolio_article">
-          <div className="portfolio_img">
-            <img src={P2} alt="" />
-          </div>
-          <h5>Data Site</h5>
-          <div>
-            <a
-              href="https://github.com/AdarshVMore/data-site"
-              target="_blank"
-              className="btn"
-            >
-              Github
-            </a>
-            <a
-              href="https://growithdata.netlify.app/"
-              target="_blank"
-              className=" btn btn-primary"
-            >
-              Live Demo
-            </a>
-          </div>
-        </article>
+        {state === "#frontend" ? <Frontend /> : ""}
+        {state === "#web2" ? <Web2 /> : ""}
+        {state === "#web3" ? <Web3 /> : ""}
+        {state === "#uiux" ? <UiUx /> : ""}
       </div>
       <h5 className=" portLower">More to Arrive here</h5>
     </section>

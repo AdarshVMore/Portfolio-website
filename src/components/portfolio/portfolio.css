@@ -2,12 +2,26 @@
   padding-top: 5.5rem;
 }
 
+button {
+  background: transparent;
+}
+
+.filter_btns {
+  display: flex;
+  /* flex-direction: column; */
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+
 .portfolio_container {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
   flex-wrap: wrap;
-  gap: 1rem;
+  gap: 2rem;
 }
 
 .portfolio_container img {
@@ -19,6 +33,9 @@
 
 .portHeader {
   opacity: 0;
+}
+.portHeader_bottom {
+  margin-bottom: 2.5rem;
 }
 .portfolio_article {
   width: 17rem;
