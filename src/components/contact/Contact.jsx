@@ -134,7 +134,13 @@ function Contact() {
             </a>
           </article>
         </div>
-        <form ref={form} onSubmit={sendEmail} className="contact_option_two">
+        {/* <form
+          ref={form}
+          action="https://formsubmit.co/adarshisworking@gmail.com"
+          onSubmit={sendEmail}
+          className="contact_option_two"
+          method="POST"
+        >
           <input type="text" name="name" placeholder="Your Name" />
           <input type="text" name="email" placeholder="Your Email Id" />
           <textarea
@@ -146,6 +152,49 @@ function Contact() {
           <button type="submit" className="btn btn-primary">
             Send Message
           </button>
+        </form> */}
+        <form
+          action="https://formsubmit.co/adarshisworking@gmail.com
+          "
+          method="POST"
+          class="contact__form grid"
+        >
+          <div class="contact__inputs grid">
+            <div class="contact__content">
+              <input
+                name="name"
+                type="text"
+                placeholder="Your Name"
+                class="contact__input"
+              />
+            </div>
+            <div class="contact__content">
+              <input
+                name="email"
+                type="email"
+                placeholder="Your Email"
+                class="contact__input"
+              />
+            </div>
+          </div>
+
+          <div class="contact__content">
+            <textarea
+              name=""
+              id=""
+              cols="0"
+              rows="7"
+              class="contact__input"
+              placeholder="Message"
+            ></textarea>
+          </div>
+
+          <div>
+            <button type="submit" class="button button--flex">
+              Send Message
+              <i class="uil uil-message button__icon"></i>
+            </button>
+          </div>
         </form>
       </div>
     </section>

@@ -31,7 +31,7 @@ function About() {
           trigger: header,
           start: "top 70%",
           end: "bottom 10%",
-          toggleActions: "restart reverse restart reverse",
+          // toggleActions: "restart reverse restart reverse",
           // markers: true,
         },
       }
@@ -50,7 +50,7 @@ function About() {
           trigger: el,
           start: "top 70%",
           end: "bottom 20%",
-          toggleActions: "restart reverse restart reverse",
+          // toggleActions: "restart reverse restart reverse",
           // markers: true,
         },
       }
@@ -72,7 +72,7 @@ function About() {
           trigger: text,
           start: "top 85%",
           end: "bottom 20%",
-          toggleActions: "restart reverse restart reverse",
+          // toggleActions: "restart reverse restart reverse",
           // markers: true,
         },
       }
@@ -89,7 +89,7 @@ function About() {
           trigger: text,
           start: "top 85%",
           end: "bottom 20%",
-          toggleActions: "restart reverse restart reverse",
+          // toggleActions: "restart reverse restart reverse",
           // markers: true,
         },
       }

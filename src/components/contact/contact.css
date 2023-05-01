@@ -55,10 +55,12 @@ article .contact_icon {
   border: 2px solid var(--color-primary);
   background: transparent;
   color: var(--color-primary);
-  min-width: 300px;
+  min-width: 350px;
 }
 .contact_container form textarea {
   margin-bottom: 2rem;
+  width: 40vw;
+  min-width: 350px;
   padding: 20px;
   border-radius: 10px;
   outline: none;
@@ -73,6 +75,14 @@ input::placeholder {
 textarea::placeholder {
   color: var(--color-primary);
   font-family: "Poppins", sans-serif;
+}
+
+#contact button {
+  padding: 15px 25px;
+  /* color: transparent; */
+  background-color: var(--color-primary);
+  border: none;
+  border-radius: 10px;
 }
 
 /* ===================  MEDIA QUERIES  ===================== */
