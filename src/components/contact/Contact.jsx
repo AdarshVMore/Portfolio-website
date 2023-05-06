@@ -154,8 +154,10 @@ function Contact() {
           </button>
         </form> */}
         <form
+          ref={form}
           action="https://formsubmit.co/adarshisworking@gmail.com
           "
+          className="contact_option_two"
           method="POST"
           class="contact__form grid"
         >
