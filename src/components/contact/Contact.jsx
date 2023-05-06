@@ -180,7 +180,7 @@ function Contact() {
 
           <div class="contact__content">
             <textarea
-              name=""
+              name="message"
               id=""
               cols="0"
               rows="7"

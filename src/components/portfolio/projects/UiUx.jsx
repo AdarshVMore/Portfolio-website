@@ -1,6 +1,6 @@
 import React from "react";
 import P1 from "../../../assets/assets/portfolio1.png";
-import P2 from "../../../assets/assets/portfolio2.png";
+import P2 from "../../../assets/assets/Web3_1.png";
 import P3 from "../../../assets/assets/portfolio3.png";
 function UiUx() {
   return (
@@ -12,11 +12,11 @@ function UiUx() {
         <h5>Portfolio Website</h5>
         <div>
           <a
-            href="https://github.com/AdarshVMore/Portfolio-website"
+            href="https://www.figma.com/file/ELqzvXtzEDzMkJQbM6WVn8/Untitled?type=design&node-id=0%3A1&t=zcF4Nhi3Csbagbdb-1"
             className="btn"
             target="_blank"
           >
-            Github
+            Figma
           </a>
           <a href="" className=" btn btn-primary" target="_blank">
             Live Demo
@@ -30,13 +30,13 @@ function UiUx() {
         <h5>Students Community Platform</h5>
         <div>
           <a
-            href="https://github.com/AdarshVMore/Students-Community-Platform"
+            href="https://www.figma.com/proto/u2iStDtnF5G2ZMkepgc1Kn/Untitled?node-id=0-3&starting-point-node-id=0%3A3"
             className="btn"
             target="_blank"
           >
-            Github
+            Figma
           </a>
-          <a href="" className=" btn btn-primary">
+          <a href="" className=" btn btn-primary" target="_blank">
             Live Demo
           </a>
         </div>
@@ -45,14 +45,14 @@ function UiUx() {
         <div className="portfolio_img">
           <img src={P2} alt="" />
         </div>
-        <h5>Data Site</h5>
+        <h5>Health on Chain</h5>
         <div>
           <a
-            href="https://github.com/AdarshVMore/data-site"
+            href="https://www.figma.com/file/nBeW708usIveltXSVUuHUV/Untitled?type=design&node-id=0-1&t=hHKlvxXpdf9yCIEq-0"
             target="_blank"
             className="btn"
           >
-            Github
+            Figma
           </a>
           <a
             href="https://growithdata.netlify.app/"

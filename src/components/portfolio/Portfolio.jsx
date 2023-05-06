@@ -1,6 +1,6 @@
 import React from "react";
 import "./portfolio.css";
-
+import All from "./projects/All";
 import Frontend from "./projects/Frontend";
 import Web2 from "./projects/Web2";
 import Web3 from "./projects/Web3";
@@ -11,7 +11,7 @@ import { useRef, useEffect, useState } from "react";
 gsap.registerPlugin(ScrollTrigger);
 
 function Portfolio() {
-  const [state, setState] = useState("#frontend");
+  const [state, setState] = useState("#all");
 
   const portRef = useRef(null);
   const portArticleRef = useRef(null);
@@ -67,6 +67,12 @@ function Portfolio() {
       <h2 className="portHeader portHeader_bottom">Portfolio</h2>
       <div className="filter_btns">
         <button
+          onClick={() => setState("#all")}
+          className={state === "#all" ? "btn btn-primary" : "btn"}
+        >
+          All
+        </button>
+        <button
           onClick={() => setState("#frontend")}
           className={state === "#frontend" ? "btn btn-primary" : "btn"}
         >
@@ -97,12 +103,12 @@ function Portfolio() {
         </button>
       </div>
       <div className="container portfolio_container" ref={portArticleRef}>
+        {state === "#all" ? <All /> : ""}
         {state === "#frontend" ? <Frontend /> : ""}
         {state === "#web2" ? <Web2 /> : ""}
         {state === "#web3" ? <Web3 /> : ""}
         {state === "#uiux" ? <UiUx /> : ""}
       </div>
-      <h5 className=" portLower">More to Arrive here</h5>
     </section>
   );
 }
